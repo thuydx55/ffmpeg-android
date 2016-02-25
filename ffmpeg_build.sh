@@ -11,6 +11,9 @@ case $1 in
   x86)
     CPU='i686'
   ;;
+  x86_64)
+    CPU='x86_64'
+  ;;
 esac
 
 make clean

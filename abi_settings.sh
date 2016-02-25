@@ -22,6 +22,13 @@ case $1 in
     NDK_CROSS_PREFIX="i686-linux-android"
     CFLAGS="$CFLAGS -march=i686"
   ;;
+  x86_64)
+    NDK_ABI='x86_64'
+    NDK_TOOLCHAIN_ABI='x86_64'
+    NDK_CROSS_PREFIX="x86_64-linux-android"
+    CFLAGS="$CFLAGS -march=x86-64"
+    ANDROID_API_VERSION=21
+  ;;
 esac
 
 TOOLCHAIN_PREFIX=${BASEDIR}/toolchain-android
